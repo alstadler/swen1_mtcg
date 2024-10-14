@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace mtcg.Models
+﻿namespace MTCG.Models
 {
-    internal class MonsterCard
+    public class MonsterCard : Card
     {
+        public MonsterCard(string name, string type, int damage) : base(name, type, damage)
+        {
+            IsMonster = true;
+        }
     }
 }

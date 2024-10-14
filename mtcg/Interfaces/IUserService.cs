@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using MTCG.Models;
 
-namespace mtcg.Interfaces
+namespace MTCG.Interfaces
 {
-    internal interface IUserService
+    public interface IUserService
     {
+        User Register(string username, string password);
+        User GetUserByToken(string token);
+        string Login(string username, string password);
+
     }
 }

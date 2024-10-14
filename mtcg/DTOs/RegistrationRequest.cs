@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace mtcg.DTOs
+﻿namespace MTCG.DTOs
 {
-    internal class RegistrationRequest
+    public class RegistrationRequest
     {
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 }
