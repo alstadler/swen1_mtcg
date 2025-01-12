@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\DataAccess",
+    "\\Models",
+    "\\Services",
+    "\\UnitTests"
+  ],
+  "SelectedNode": "\\DataAccess\\Database.sql",
+  "PreviewInSolutionExplorer": false
+}

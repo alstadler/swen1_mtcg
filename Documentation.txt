@@ -1,0 +1,30 @@
+1. Architecture
+	The Application follows a modular design with distinct layers: controller, services, models and database access.
+	Each Service focuses on a specific domain to ensure clear seperation of concerns.
+
+2. REST-Server
+	Implemented a custom HTTP-Server without using any HTTP framework.
+	Used HttpListener for request listening and processing.
+
+3. Database
+	PostgreSQL for persistance.
+	Designed normalized tables for users, cards, packages, decks, trades and battles.
+
+4. Solutions
+
+	All database queries use parameterized statements to prevent SQL injection.
+	Usage of a Matchmaking Queue to handle concurrency and ensure fair matchmaking.
+
+
+Time Tracking:
+
+Initial Setup & Research			 6 Hours
+REST Server Implementation			12 Hours
+Database Design & Integration		10 Hours
+Service Layer Development			14 Hours
+Battle Logic Implementation			 8 Hours
+Unit Test Development				 4 Hours
+Debugging & Optimization			 8 Hours
+Documentation & Protocol			 2 Hours
+
+Total								64 Hours

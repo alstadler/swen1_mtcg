@@ -1,19 +1,13 @@
-﻿using MTCG.Interfaces;
+using System;
 
 namespace MTCG.Models
 {
-    public abstract class Card : ICard
+    public class Card
     {
+        public Guid Id { get; set; }
         public string Name { get; set; }
-        public string Type { get; set; }
-        public int Damage { get; set; }
-        public bool IsMonster { get; protected set; }
+        public float Damage { get; set; }
 
-        public Card(string name, string type, int damage)
-        {
-            Name = name;
-            Type = type;
-            Damage = damage;
-        }
+        public string Type { get; set; }
     }
 }
